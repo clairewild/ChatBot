@@ -27,7 +27,7 @@ At least check 'messages' in Subscription Fields, others are optional
 
 9) Verify and Save
 
-10) If you did it correctly, your page should respond to every message from YOU to the page with "Hello World" 
+10) If you did it correctly, your page should respond to every message from YOU to the page with "Hello World"
 Note that this will not work for anyone else until you submit your app for review
 
 Using this as a reference can help: https://developers.facebook.com/docs/messenger-platform/quickstart
@@ -36,4 +36,6 @@ No experience with Heroku? Its super easy: https://devcenter.heroku.com/articles
 
 This seems like another tutorial that goes more in-depth (although in Node.js but should be fairly easy to translate, maybe?) - https://github.com/jw84/messenger-bot-tutorial
 
-I don't have much more experience with bots than this, but I would be happy to try and answer any questions you have! You can contact me at reparadocs (at) gmail (dot) com
+## Links
+
+https://wit.ai/clairewild/ClairesChatBot/entities
