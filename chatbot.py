@@ -18,12 +18,14 @@ def webhook():
       payload = {'recipient': {'id': sender}, 'message': {'text': "Hello World"}} # We're going to send this back
       r = requests.post('https://graph.facebook.com/v2.6/me/messages/?access_token=' + token, json=payload) # Lets send it
     except Exception as e:
-      print traceback.format_exc() # something went wrong
+      print(traceback.format_exception()) # something went wrong
+
   elif request.method == 'GET': # For the initial verification
     if request.args.get('hub.verify_token') == 'Hello World':
       return request.args.get('hub.challenge')
     return "Wrong Verify Token"
-  return "Hello World" #Not Really Necessary
+    
+  return "Hello World"
 
 if __name__ == '__main__':
   app.run(debug=True)
