@@ -21,6 +21,7 @@ def webhook():
       print traceback.format_exc() # something went wrong
   elif request.method == 'GET':
     if request.args.get("hub.verify_token") == "Hi!":
+      print("Get request made")
       return request.args.get("hub.challenge")
     return "Wrong Verify Token"
 
